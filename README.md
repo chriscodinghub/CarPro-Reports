@@ -1,7 +1,6 @@
 # Car-Details-Finder
 
 ## Table of Contents
-+ [License](#license)
 + [User Story](#userstory)
 + [Description](#description)
 + [Usage](#usage)
@@ -10,7 +9,7 @@
 
 ## User Story
 
-# As a user:
+### As a user:
 
 <ul>
 <li>WHEN I search for a Make/Model of a vehicle</li>
@@ -21,7 +20,7 @@
 
 ## Acceptance Criteria
 
-# It is done when:
+### It is done when:
 
 <ul>
 <li>I search a vehicle I am given a photo of the vehicle</li>
