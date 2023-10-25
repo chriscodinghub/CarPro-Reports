@@ -1,6 +1,7 @@
 # Car-Details-Finder
 
 ## Table of Contents
+
 + [User Story](#user-story)
 + [Description](#description)
 + [Usage](#usage)
@@ -11,7 +12,7 @@
 ## User Story
 As a user, I want to search for a make and model of a vehicle so I can see specifications & photos of that vehicle.
 
-# As a user:
+### As a user:
 
 <ul>
 <li>WHEN I search for a Make/Model of a vehicle</li>
@@ -30,7 +31,7 @@ It is done when:
 <li>I search a vehicle & a list is displayed showing the different generations of that make & model</li>
 </ul>
 
-# It is done when:
+### It is done when:
 
 <ul>
 <li>I search a vehicle I am given a photo of the vehicle</li>
