@@ -22,7 +22,8 @@ As a user, I want to search for a make and model of a vehicle so I can see speci
 </ul>
 
 ## Acceptance Criteria
-###It is done when:
+
+### It is done when:
 
 <ul>
 <li>The page dynamically updates with documentation parsed from a server-side API</li>
