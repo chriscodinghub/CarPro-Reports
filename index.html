@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Link for Semantic UI -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" /> 
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>CarPro Reports</title>
+</head>
+
+<body class="min-height-100vh">
+    <header class="black">
+        <h1 class="ui huge header">
+            <i class="car icon"></i><i class="folder open outline icon"></i><div class="content"> CarPro Reports</div>
+        </h1>
+    </header>              
+
+    <main>
+        <!-- Search bar -->
+        <section class="ui card search-card">
+            <div class="content">
+                <div class="ui action input">
+                    <input type="text" placeholder="Search">
+                    <button class="ui button">Search</button>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="ui horizontal divider">Options</div>
+            
+            <!-- "Make" dropdown menu -->
+            <div class="ui floating dropdown labeled search icon button">
+                <i class="search icon"></i>
+                <span class="text">Select Make</span>
+                <div class="menu">
+                    <div class="item">Acura</div>
+                    <div class="item">BMW</div>
+                    <div class="item">Chevrolet</div>
+                    <div class="item">Dodge</div>
+                </div>
+            </div>
+
+            <!-- "Model" dropdown menu -->
+            <div class="ui floating dropdown labeled search icon button">
+                <i class="search icon"></i>
+                <span class="text">Select Model</span>
+                <div class="menu">
+                    <div class="item">TLX</div>
+                    <div class="item">528i</div>
+                    <div class="item">Malibu</div>
+                    <div class="item">Charger</div>
+                </div>
+            </div>
+
+            <!-- "Year" dropdown menu -->
+            <div class="ui floating dropdown labeled search icon button">
+                <i class="search icon"></i>
+                <span class="text">Select Year</span>
+                <div class="menu">
+                    <div class="item">1992</div>
+                    <div class="item">2002</div>
+                    <div class="item">2012</div>
+                    <div class="item">2022</div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    
+    <!-- Semantic UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" 
+        integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+</body>
+
+</html>
