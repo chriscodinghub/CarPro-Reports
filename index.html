@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CDN Link for Semantic UI -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
-    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Custom CSS file -->
-  <link rel="stylesheet" href="assets\style.css">
-  <title>CarPro Reports</title>
-</head>
-<body class="min-height-100vh">
-  <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <h1>CarPro Reports</h1>
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button type="submit">Search</button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Search bar -->
-    <section class="ui card search-card">
-      <!-- Divider -->
-      <div class="ui horizontal divider">Options</div>
-
-      <!-- "Year" dropdown menu -->
-      <div class="ui selection dropdown" id="yearDropdown">
-        <input type="hidden" name="year">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Year</div>
-        <div class="menu">
-          <div class="item" data-value="1992">1992</div>
-          <div class="item" data-value="2002">2002</div>
-          <div class="item" data-value="2012">2012</div>
-          <div class="item" data-value="2022">2022</div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN Link for Semantic UI -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="assets\style.css" />
+    <title>CarPro Reports</title>
+  </head>
+  <body class="min-height-100vh">
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <h1>CarPro Reports</h1>
       </div>
-
-      <!-- "Make" dropdown menu -->
-      <div class="ui selection dropdown" id="makeDropdown">
-        <input type="hidden" name="make">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Make</div>
-        <div class="menu">
-          <div class="item" data-value="Acura">Acura</div>
-          <div class="item" data-value="BMW">BMW</div>
-          <div class="item" data-value="Chevrolet">Chevrolet</div>
-          <div class="item" data-value="Dodge">Dodge</div>
-        </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
       </div>
+    </header>
 
-      <!-- "Model" dropdown menu -->
-      <div class="ui selection dropdown" id="modelDropdown">
-        <input type="hidden" name="model">
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Model</div>
-        <div class="menu">
-          <div class="item" data-value="TLX">TLX</div>
-          <div class="item" data-value="528i">528i</div>
-          <div class="item" data-value="Malibu">Malibu</div>
-          <div class="item" data-value="Charger">Charger</div>
+    <main>
+      <!-- Search bar -->
+      <section class="ui card search-card">
+        <div class="content">
+          <div class="ui action input">
+            <input class="userInput" type="text" placeholder="Search" />
+            <button class="ui button">Search</button>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="ui horizontal divider">Options</div>
+        <!-- "Year" dropdown menu -->
+        <div class="ui selection dropdown" id="yearDropdown">
+          <input type="hidden" name="year" />
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Year</div>
+          <div class="menu">
+            <div class="item" data-value="1992">1992</div>
+            <div class="item" data-value="2002">2002</div>
+            <div class="item" data-value="2012">2012</div>
+            <div class="item" data-value="2022">2022</div>
+          </div>
+        </div>
 
-  <!-- Semantic UI -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
-    integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Custom JavaScript -->
-  <script src="script.js"></script>
-</body>
+        <!-- "Make" dropdown menu -->
+        <div class="ui selection dropdown" id="makeDropdown">
+          <input type="hidden" name="make" />
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Make</div>
+          <div class="menu">
+            <div class="item" data-value="Acura">Acura</div>
+            <div class="item" data-value="BMW">BMW</div>
+            <div class="item" data-value="Chevrolet">Chevrolet</div>
+            <div class="item" data-value="Dodge">Dodge</div>
+          </div>
+        </div>
+
+        <!-- "Model" dropdown menu -->
+        <div class="ui selection dropdown" id="modelDropdown">
+          <input type="hidden" name="model" />
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Model</div>
+          <div class="menu">
+            <div class="item" data-value="TLX">TLX</div>
+            <div class="item" data-value="528i">528i</div>
+            <div class="item" data-value="Malibu">Malibu</div>
+            <div class="item" data-value="Charger">Charger</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Semantic UI -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
