@@ -42,10 +42,11 @@ This web application provides a way for users to get basic details and/or specif
 
 ## Mock-Up
 
-![Wire-Frame](https://github.com/chriscodinghub/Car-Details-Finder/assets/144561170/74f5c74f-602c-4cb9-b1dc-76767f1cde4d)
+<img src="./images/mockup.png" alt="Wire-Frame" width="900" height="600">
 
-## Contributors
-[Chris](https://github.com/chriscodinghub) <br>
-[Benjamin](https://github.com/bjpippenger) <br>
-[Mack](https://github.com/techmack92) 
+
+# Contributors
+## [Chris](https://github.com/chriscodinghub) <br>
+## [Benjamin](https://github.com/bjpippenger) <br>
+## [Mack](https://github.com/techmack92) 
 
