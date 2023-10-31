@@ -7,7 +7,7 @@ var options = {
 $(".car-btn").on("click", function () {
   var textInput = $(".car-btn").siblings(".userInput").val();
   var make = textInput;
-  var url = "https://api.api-ninjas.com/v1/cars?limit=50&make=" + make;
+  var url = "https://api.api-ninjas.com/v1/cars?limit=50&make="+make;
 
   $(".results").empty();
 
@@ -18,19 +18,38 @@ $(".car-btn").on("click", function () {
   .then(function(data){
     var results = data
     console.log(results)
+
+    var uniqueNames = [];
+
     results.forEach(function({make, model, year, fuel_type, cylinders, drive}){
+      var fullName = make + " " + model;
+      // Check if the name is already in the uniqueNames array
+      if (!uniqueNames.includes(fullName)) {
+        uniqueNames.push(fullName);
+
       var card = document.createElement('div')
       card.classList.add('card')
       card.innerHTML = `
-      <div class="card-body">
-        <h3 class="card-make">${make}, ${model}</h3>
-        <h4 class="card-subtitle mb-2 text-body-secondary">Fuel Type: ${fuel_type}, Cylinders: ${cylinders}, Drive: ${drive}</h4>
-        <p class="card-text">Year: ${year}</p>
-        <br>
+    <div class="ui green card">
+      <div class="results">
+        <div class="ui relaxed divided list">
+          <div class="item">
+            <div class="content">
+              <div class="car-name" style="text-decoration: underline; font-size: medium;">${make} ${model}</div>
+              <p>Cylinder: ${cylinders}</p>
+              <p>Fuel: ${fuel_type}</p>
+              <p>MPG: </p>
+              <p>Drive Type: ${drive}</p>
+              <p>Year: ${year}
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
       `
 
       document.querySelector('.results').appendChild(card)
+      }
     })
   })
   });
