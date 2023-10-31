@@ -36,6 +36,7 @@ h1 {
   }
 }
 
+/* Put some space between content and card */
 .search-bar, .results {
   margin: 27px;
 }
