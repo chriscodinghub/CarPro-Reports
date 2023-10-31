@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- CDN Link for Semantic UI -->
     <link
       rel="stylesheet"
@@ -11,10 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="./assets/style.css" />
     <title>CarPro Reports</title>
   </head>
+
   <body class="min-height-100vh">
     <header class="header">
       <div class="logo">
@@ -31,7 +34,10 @@
             <button class="ui button car-btn">Search</button>
           </div>
         </div>
+
+        <!-- Divider -->
         <div class="ui horizontal divider">Options</div>
+
         <!-- "Year" dropdown menu -->
         <div class="ui selection dropdown" id="yearDropdown">
           <input type="hidden" name="year" />
@@ -73,6 +79,8 @@
         <div class="results"></div>
       </section>
     </main>
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- Semantic UI -->
@@ -82,6 +90,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- Custom JavaScript -->
     <script src="./assets/feature_CarAPI.js"></script>
     <script src="./assets/feature_PhotoApi.js"></script>
