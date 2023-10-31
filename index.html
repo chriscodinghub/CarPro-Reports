@@ -26,11 +26,13 @@
     </header>
 
     <main>
+      <!-- Car Search -->
       <!-- Search bar -->
-      <section class="ui card search-card">
-        <div class="content">
-          <div class="ui action input">
-            <input class="userInput" type="text" placeholder="Search" />
+      <section class="ui card car-search">
+        <div class="row">
+          <h2 style="text-align: center;">Car Search</h2>
+          <div class="ui action input column">
+            <input class="userInput" type="text" placeholder="Search Car" />
             <button class="ui button car-btn">Search</button>
           </div>
         </div>
@@ -39,9 +41,9 @@
         <div class="ui horizontal divider">Options</div>
 
         <!-- "Year" dropdown menu -->
-        <div class="ui selection dropdown" id="yearDropdown">
+        <div class="ui selection dropdown" id="car-year">
           <input type="hidden" name="year" />
-          <i class="dropdown icon"></i>
+          <i class="search icon"></i>
           <div class="default text">Select Year</div>
           <div class="menu">
             <div class="item" data-value="1992">1992</div>
@@ -52,9 +54,9 @@
         </div>
 
         <!-- "Make" dropdown menu -->
-        <div class="ui selection dropdown" id="makeDropdown">
+        <div class="ui selection dropdown" id="car-make">
           <input type="hidden" name="make" />
-          <i class="dropdown icon"></i>
+          <i class="search icon"></i>
           <div class="default text">Select Make</div>
           <div class="menu">
             <div class="item" data-value="Acura">Acura</div>
@@ -65,9 +67,9 @@
         </div>
 
         <!-- "Model" dropdown menu -->
-        <div class="ui selection dropdown" id="modelDropdown">
+        <div class="ui selection dropdown" id="car-model">
           <input type="hidden" name="model" />
-          <i class="dropdown icon"></i>
+          <i class="search icon"></i>
           <div class="default text">Select Model</div>
           <div class="menu">
             <div class="item" data-value="TLX">TLX</div>
@@ -78,6 +80,62 @@
         </div>
         <div class="results"></div>
       </section>
+
+      <!-- Motorcycle Search -->
+      <!-- Search bar -->
+      <section class="ui card cycle-search">
+        <div class="row">
+          <h2 style="text-align: center;">Motorcycle Search</h2>
+          <div class="ui action input column">
+            <input class="userInput" type="text" placeholder="Search Motorcycle" />
+            <button class="ui button cycle-btn">Search</button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="ui horizontal divider">Options</div>
+
+        <!-- "Year" dropdown menu -->
+        <div class="ui selection dropdown" id="cycle-year">
+          <input type="hidden" name="year" />
+          <i class="search icon"></i>
+          <div class="default text">Select Year</div>
+          <div class="menu">
+            <div class="item" data-value="1992">1992</div>
+            <div class="item" data-value="2002">2002</div>
+            <div class="item" data-value="2012">2012</div>
+            <div class="item" data-value="2022">2022</div>
+          </div>
+        </div>
+
+        <!-- "Make" dropdown menu -->
+        <div class="ui selection dropdown" id="cycle-make">
+          <input type="hidden" name="make" />
+          <i class="search icon"></i>
+          <div class="default text">Select Make</div>
+          <div class="menu">
+            <div class="item" data-value="Acura">Acura</div>
+            <div class="item" data-value="BMW">BMW</div>
+            <div class="item" data-value="Chevrolet">Chevrolet</div>
+            <div class="item" data-value="Dodge">Dodge</div>
+          </div>
+        </div>
+
+        <!-- "Model" dropdown menu -->
+        <div class="ui selection dropdown" id="cycle-model">
+          <input type="hidden" name="model" />
+          <i class="search icon"></i>
+          <div class="default text">Select Model</div>
+          <div class="menu">
+            <div class="item" data-value="TLX">TLX</div>
+            <div class="item" data-value="528i">528i</div>
+            <div class="item" data-value="Malibu">Malibu</div>
+            <div class="item" data-value="Charger">Charger</div>
+          </div>
+        </div>
+        <div class="results"></div>
+      </section>
+
     </main>
 
     <!-- jQuery -->
