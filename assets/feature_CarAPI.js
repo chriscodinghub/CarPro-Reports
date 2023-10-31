@@ -6,8 +6,8 @@ var options = {
 };
 $(".car-btn").on("click", function () {
   var textInput = $(".car-btn").siblings(".userInput").val();
-  var model = textInput;
-  var url = "https://api.api-ninjas.com/v1/cars?limit=5&model=" + model;
+  var make = textInput;
+  var url = "https://api.api-ninjas.com/v1/cars?limit=50&make=" + make;
 
   $(".results").empty();
 
@@ -29,12 +29,52 @@ $(".car-btn").on("click", function () {
         <br>
       </div>
       `
-      
+
       document.querySelector('.results').appendChild(card)
     })
   })
   });
 }
+function dropDownCars(){
+  var options = {
+    method: "GET",
+    headers: { "X-Api-Key": "bHmMS6Y1Uh7qh8GEsYOYsA==27pfSz2CXKjlH5w4" },
+  };
+  var years = [];
+
+for (var year = 1950; year <= 2020; year++) {
+  years.push(year);
+}
+  // var year = menuContainer;
+  var url = "https://api.api-ninjas.com/v1/cars?year="+years;
+  fetch(url, options)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data)
+    var years = data.map(function(car) {
+      return car.year;
+    });
+
+    var yearDropdown = document.getElementById("car-year");
+    var menuContainer = yearDropdown.querySelector(".menu");
+
+    years.forEach(function(year) {
+      var item = document.createElement("div");
+      item.classList.add("item");
+      item.setAttribute("data-value", year);
+      item.textContent = year;
+
+      menuContainer.appendChild(item);
+    });
+  });
+}
+
+
+
+
+
 searchCars()
 
 
@@ -50,3 +90,4 @@ searchCars()
 //     .catch((err) => {
 //       console.log("error ${err}");
 //     });
+
