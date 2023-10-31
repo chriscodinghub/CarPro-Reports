@@ -1,61 +1,42 @@
+/* Center the main content */
 main {
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333333;
-    padding: 20px;
-    width: 100%;
-  }
+/* Center the cards and add some spacing between them */
+.ui.card {
+  width: 400px; /* Adjust the card width as needed */
+  margin: 25px auto; /* Center the cards horizontally and add spacing */
+}
 
-  .ui.card {
-    width: 50%;
-  }
+#hero {
+  background-image: url('./images/green-car.webp');
+  width: 100%; 
+  height: 60vh; 
+  background-size: cover;
+}
 
-  .car-search, .cycle-search {
-    padding: 20px;
-    border: 10px;
+/* Shadows and glow animations used for glowing appearance for the header text*/
+h1 {
+  font-family: 'Fondamento';
+  font-size: 200px;
+  text-align: center;
+  animation: glow 1s infinite alternate;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
   }
-   
-  .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
+  to {
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
   }
-  
-  .search-bar input[type="text"] {
-    width: 200px;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .search-bar button {
-    padding: 10px;
-    background-color: #ffffff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .ui.card.search-card {
-    margin: 20px auto;
-    max-width: 400px;
-    padding: 20px;
-  }
+}
+
+/* Put some space between content and card */
+.search-bar, .results {
+  margin: 27px;
+}

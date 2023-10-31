@@ -13,129 +13,57 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="./assets/style.css" />
+
+
     <title>CarPro Reports</title>
   </head>
 
-  <body class="min-height-100vh">
-    <header class="header">
-      <div class="logo">
-        <h1>CarPro Reports</h1>
+  <body>
+    <!-- Hero image -->
+    <section id="hero">
+        <div 
+            class="bg-image" 
+            style="background-image: url('./images/green-car.webp');
+            height: 400px;">
+            <h1>CarPro Reports</h1>
+        </div>
+    </section>
+
+    <main class="ui center aligned container">  
+      <!-- Search Card -->
+      <div class="ui red card">
+        <div class="search-bar">
+          <h2>Car Search</h2>
+          <div class="ui action input">
+            <input type="text" placeholder="Search a Car" />
+            <button class="ui inverted secondary button">Search</button>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <section id="dogFacts">
-
-      </section>
-      <!-- Car Search -->
-      <!-- Search bar -->
-      <section class="ui card car-search">
-        <div class="row-12">
-          <h2 style="text-align: center;">Car Search</h2>
-          <div class="ui action input column">
-            <input class="userInput" type="text" placeholder="Search Car Make" />
-            <button class="ui button car-btn">Search</button>
+      <!-- Results Card -->
+      <div class="ui green card">
+        <div class="results">
+          <h2>Search Results</h2>
+          <div class="ui relaxed divided list">
+            <div class="item">
+              <div class="content">
+                <div class="car-name" style="text-decoration: underline; font-size: medium;">Honda Civic</div>
+                <p>Cylinder: 4</p>
+                <p>Fuel: Gasoline</p>
+                <p>MPG: 30</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Divider -->
-        <!-- <div class="ui horizontal divider">Options</div> -->
-
-        <!-- "Year" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="car-year">
-          <input type="hidden" name="year" />
-          <i class="search icon"></i>
-          <div class="default text">Select Year</div>
-          <div class="menu">
-            
-          </div>
-        </div> -->
-
-        <!-- "Make" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="car-make">
-          <input type="hidden" name="make" />
-          <i class="search icon"></i>
-          <div class="default text">Select Make</div>
-          <div class="menu">
-            <div class="item" data-value="Acura">Acura</div>
-            <div class="item" data-value="BMW">BMW</div>
-            <div class="item" data-value="Chevrolet">Chevrolet</div>
-            <div class="item" data-value="Dodge">Dodge</div>
-          </div>
-        </div> -->
-
-        <!-- "Model" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="car-model">
-          <input type="hidden" name="model" />
-          <i class="search icon"></i>
-          <div class="default text">Select Model</div>
-          <div class="menu">
-            <div class="item" data-value="TLX">TLX</div>
-            <div class="item" data-value="528i">528i</div>
-            <div class="item" data-value="Malibu">Malibu</div>
-            <div class="item" data-value="Charger">Charger</div>
-          </div>
-        </div>
-        <div class="results"></div>
-      </section> -->
-
-      <!-- Motorcycle Search -->
-      <!-- Search bar -->
-      <!-- <section class="ui card cycle-search">
-        <div class="row">
-          <h2 style="text-align: center;">Motorcycle Search</h2>
-          <div class="ui action input column">
-            <input class="userInput" type="text" placeholder="Search Motorcycle" />
-            <button class="ui button cycle-btn">Search</button>
-          </div>
-        </div> -->
-
-        <!-- Divider -->
-        <!-- <div class="ui horizontal divider">Options</div> -->
-
-        <!-- "Year" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="cycle-year">
-          <input type="hidden" name="year" />
-          <i class="search icon"></i>
-          <div class="default text">Select Year</div>
-          <div class="menu">
-            <div class="item" data-value="1992">1992</div>
-            <div class="item" data-value="2002">2002</div>
-            <div class="item" data-value="2012">2012</div>
-            <div class="item" data-value="2022">2022</div>
-          </div>
-        </div> -->
-
-        <!-- "Make" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="cycle-make">
-          <input type="hidden" name="make" />
-          <i class="search icon"></i>
-          <div class="default text">Select Make</div>
-          <div class="menu">
-            <div class="item" data-value="Acura">Acura</div>
-            <div class="item" data-value="BMW">BMW</div>
-            <div class="item" data-value="Chevrolet">Chevrolet</div>
-            <div class="item" data-value="Dodge">Dodge</div>
-          </div>
-        </div> -->
-
-        <!-- "Model" dropdown menu -->
-        <!-- <div class="ui selection dropdown" id="cycle-model">
-          <input type="hidden" name="model" />
-          <i class="search icon"></i>
-          <div class="default text">Select Model</div>
-          <div class="menu">
-            <div class="item" data-value="TLX">TLX</div>
-            <div class="item" data-value="528i">528i</div>
-            <div class="item" data-value="Malibu">Malibu</div>
-            <div class="item" data-value="Charger">Charger</div>
-          </div>
-        </div>  -->
-        <div class="results"></div>
-      </section>
-
+      </div>
     </main>
 
     <!-- jQuery -->
