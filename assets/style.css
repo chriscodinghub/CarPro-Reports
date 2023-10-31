@@ -8,7 +8,7 @@ main {
 /* Center the cards and add some spacing between them */
 .ui.card {
   width: 400px; /* Adjust the card width as needed */
-  margin: 100px auto; /* Center the cards horizontally and add spacing */
+  margin: 25px auto; /* Center the cards horizontally and add spacing */
 }
 
 #hero {
@@ -34,4 +34,8 @@ h1 {
   to {
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
   }
+}
+
+.search-bar, .results {
+  margin: 27px;
 }
