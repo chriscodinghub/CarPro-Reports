@@ -1,35 +1,27 @@
-// $(document).ready(function () {
-//   // API URLs
-//   const yearApiUrl = "API for years";
-//   const makeApiUrl = "API for makes";
-//   const modelApiUrl = "API for models";
-
-//   // Dropdown elements
-//   const yearDropdown = $("#yearDropdown");
-//   const makeDropdown = $("#makeDropdown");
-//   const modelDropdown = $("#modelDropdown");
-
-//   // Year dropdown
-//   $.get(yearApiUrl, function (data) {
-//     data.forEach(function (year) {
-//       yearDropdown.append($("<option>").val(year).text(year));
-//     });
-//   });
-
-//   //Make dropdown
-//   $.get(makeApiUrl, function (data) {
-//     data.forEach(function (make) {
-//       makeDropdown.append($("<option>").val(make).text(make));
-//     });
-//   });
-
-//   // Model dropdown
-//   $.get(modelApiUrl, function (data) {
-//     data.forEach(function (model) {
-//       modelDropdown.append($("<option>").val(model).text(model));
-//     });
-//   });
-
-//   // Initialize the dropdown
-//   $(".ui.dropdown").dropdown();
-// });
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Create a new Leaflet map instance
+    var map = L.map('map').setView([51.505, -0.09], 13);
+  
+    // Add a tile layer to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  
+    // Check if the Geolocation API is available
+    if ("geolocation" in navigator) {
+      // Get the user's current position
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+  
+        // Create a marker for the user's location
+        var marker = L.marker([latitude, longitude]).addTo(map);
+  
+        // Update the map view to center on the user's location
+        map.setView([latitude, longitude], 13);
+      });
+    } else {
+      console.log("Geolocation is not supported by your browser");
+    }
+  });

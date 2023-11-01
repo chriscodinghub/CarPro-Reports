@@ -15,6 +15,7 @@ $(".car-btn").on("click", function () {
   .then(function(resp){
     return resp.json()
   })
+  
   .then(function(data){
     var results = data
     console.log(results)
