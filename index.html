@@ -23,11 +23,6 @@
     
     <!-- Leaflet CSS and JavaScript -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <!-- Leaflet Control Geocoder -->
-  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-
 
     <title>CarPro Reports</title>
   </head>
@@ -43,43 +38,51 @@
         </div>
     </section>
 
-    <main class="ui center aligned container">  
-      <!-- Search Card -->
-      <div class="ui red card">
-        <div class="search-bar">
-          <h2>Car Search by Make</h2>
-          <div class="ui action input">
-            <input type="text" class="userInput" placeholder="Search a Car" />
-            <button class="ui inverted secondary button car-btn">Search</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- dog feature, style as your feel needed -->
-      <div id="dogFacts"></div>
-
-      <!-- Results Card -->
-      <div class="ui green card">
-        <h2>Search Results</h2>
-        <div class="results">
-          <div class="ui relaxed divided list">
-            <div class="item">
-              <div class="content">
-                <div class="car-name" style="text-decoration: underline; font-size: medium;">Honda Civic</div>
-                <p>Cylinder: 4</p>
-                <p>Fuel: Gasoline</p>
-                <p>MPG: 30</p>
+    <main class="ui container">
+      <div class="ui stackable grid">
+        <!-- Search Card -->
+        <div class="ten wide column">
+          <div class="ui red card">
+            <div class="search-bar">
+              <h2>Car Search</h2>
+              <div class="ui action input">
+                <input type="text" class="userInput" placeholder="Enter Make of Car" />
+                <button class="ui inverted secondary button car-btn">Search</button>
               </div>
             </div>
           </div>
         </div>
+    
+        <!-- dog feature -->
+        <div 
+          class="ui six wide column ui message" 
+          style="background-color: rgba(32, 209, 9, 0.24)" 
+          id="dogFacts">
+        </div>
+    
+        <!-- Results Card -->
+        <div class="ten wide column">
+          <div class="ui green card">
+            <div class="results">
+              <h2>Search Results</h2>
+              <div class="ui relaxed divided list">
+                <div class="item">
+                  <div class="content">
+                    <div class="car-name"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Map -->
+        <div class="six wide column">
+          <div id="map" style="height: 500px;"></div>
+        </div>
       </div>
-    
-      <!-- Map -->
-    <div id="map" style="height: 500px;"></div>
-    
     </main>
-
+    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -89,15 +92,21 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
       integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      referrerpolicy="no-referrer">
+    </script>
 
     <!-- Custom JavaScript -->
     <script src="./assets/feature_facts.js"></script>
     <script src="./assets/feature_CarAPI.js"></script>
     <script src="./assets/feature_PhotoApi.js"></script>
  
-     <!-- Leaflet JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
- </body>
+    <!-- Leaflet JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
+    <!-- Leaflet CSS and JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Control Geocoder -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  </body>
 </html>

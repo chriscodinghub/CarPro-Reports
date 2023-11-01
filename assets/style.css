@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(113, 124, 16, 0.466);
+}
+
 /* Center the main content */
 main {
   display: flex;
@@ -34,6 +38,14 @@ h1 {
   to {
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
   }
+}
+
+h2 {
+  font-family: 'Fondamento';
+}
+
+h3 {
+  font-family: 'Monospace';
 }
 
 /* Put some space between content and card */
