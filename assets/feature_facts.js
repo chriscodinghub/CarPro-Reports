@@ -6,6 +6,8 @@ function dogFacts() {
   
     var dogURL = 'https://dogapi.dog/api/v2/facts';
   
+    $("#dogFacts").empty();
+
     fetch(dogURL, options)
       .then(function(resp) {
         return resp.json();
@@ -29,3 +31,5 @@ function dogFacts() {
   }
   
   dogFacts();
+
+setInterval(dogFacts, 20000)

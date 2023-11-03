@@ -49,6 +49,6 @@ h3 {
 }
 
 /* Put some space between content and card */
-.search-bar, .results {
+.search-bar, .results, .search-results {
   margin: 27px;
 }
