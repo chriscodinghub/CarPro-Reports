@@ -10,7 +10,7 @@
 + [Contributors](#contributors)
 
 ## User Story
-As a user, I want to search for a make and model of a vehicle so I can see specifications & photos of that vehicle.
+As a user, I want to search for the year of a vehicle so I can see specifications of the vehicles made that year.
 
 
 
@@ -18,17 +18,24 @@ As a user, I want to search for a make and model of a vehicle so I can see speci
 
 <ul>
 <li>The page dynamically updates with documentation parsed from a server-side API</li>
-<li>I search a vehicle & I am given details of the vehicle</li>
-<li>I search a vehicle & I am given a photo of the vehicle</li>
-<li>I search a vehicle & a list is displayed showing the different generations of that make & model</li>
+<li>I search a year & I am given details of the vehicle</li>
+<li>If I refresh the page or wait 20 seconds a new fun fact will appear.</li>
+<li>When I load the page, I will be asked to share my location to the map, which can then be used to search for local gas stations.</li>
 </ul>
 
 ## Description
-When this web application loads, the user is met with a clean user interface that has a search bar with a set of dropdown menus and a submit button. <br>
-The dropdown menus will have options for a car's make, model and year.<br>
-Once the information is submitted, the CarQuery API is used with JavaScript & dynamic HTML & CSS elements to generate a card. <br>
-The card will include the car's basic specifications along with an image. <br>
-The image will be pulled from an image API.
+When this web application loads, the user is met with a clean user interface that has a search bar and a submit button. <br>
+The search bar will take in a range of years from 1984-present.<br>
+Once the information is submitted, the API-Ninjas is used with JavaScript & dynamic HTML & CSS elements to generate a card. <br>
+Each card will include the car's make/model and basic specifications. <br>
+<br>
+When this web application loads, the user is prompted to share their location. <br>
+If the user chooses to share their location, the map wil use geolocation to locate them and mark their location on the map. <br>
+*In development* Once the map has your location you can use the search bar to find local businesses.<br>
+<br>
+When this web application loads, the user is met with a random fun fact about dogs.<br>
+If the user refreshes the page or waits 20 seconds, a new fun fact will be generated.<br>
+
 
 ## Usage
 This web application provides a way for users to get basic details and/or specifications on any vehicle.<br> 
