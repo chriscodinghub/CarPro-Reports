@@ -30,24 +30,25 @@ $(".car-btn").on("click", function () {
 
       var card = document.createElement('div')
       card.classList.add('card')
+      card.classList.add('results')
       card.innerHTML = `
-    <div class="ui green card">
-      <div class="results">
-        <div class="ui relaxed divided list">
-          <div class="item">
-            <div class="content">
-              <div class="car-name" style="text-decoration: underline; font-size: medium;">${make} ${model}</div>
-              <p>Cylinder: ${cylinders}</p>
-              <p>Fuel: ${fuel_type}</p>
-              <p>MPG: </p>
-              <p>Drive Type: ${drive}</p>
-              <p>Year: ${year}
+        <div class="ui green card">
+          <div class="results">
+            <div class="ui relaxed divided list">
+              <div class="item">
+                <div class="content">
+                  <div class="car-name" style="text-decoration: underline; font-size: medium; margin-bottom: 5px;">${make} ${model}</div>
+                  <p>Cylinder: ${cylinders}</p>
+                  <p>Fuel: ${fuel_type}</p>
+                  <p>MPG: </p>
+                  <p>Drive Type: ${drive}</p>
+                  <p>Year: ${year}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-      `
+          `
 
       document.querySelector('.results').appendChild(card)
       }
