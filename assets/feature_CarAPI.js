@@ -6,8 +6,8 @@ var options = {
 };
 $(".car-btn").on("click", function () {
   var textInput = $(".car-btn").siblings(".userInput").val();
-  var make = textInput;
-  var url = "https://api.api-ninjas.com/v1/cars?limit=50&make="+make;
+  var year = textInput;
+  var url = "https://api.api-ninjas.com/v1/cars?limit=20&year="+year;
 
   $(".results").empty();
 
