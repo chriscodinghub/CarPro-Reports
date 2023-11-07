@@ -68,6 +68,3 @@ We would like to incorporate the following features:
 [Chris](https://github.com/chriscodinghub) <br>
 [Benjamin](https://github.com/bjpippenger) <br>
 [Mack](https://github.com/techmack92) 
-
-# Live-Page
-## [CarPro-Reports](https://chriscodinghub.github.io/CarPro-Reports/)
