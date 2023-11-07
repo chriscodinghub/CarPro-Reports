@@ -28,7 +28,6 @@ It is done when:
 <li>I see random dog facts for entertainment</li>
 </ul>
 
-
 ## Description
 When this web application loads, the user is met with a clean user interface that has a search bar & a submit button. <br>
 The user is prompted to share their location, and if they choose to do so, the map will use geolocation to locate them & mark their location on the map. <br>
@@ -52,18 +51,19 @@ This web application provides a way for users to get basic details of the vehicl
 + jQuery
 
 ## Mock-Up
-
-<img src="./images/mockup.png" alt="Wire-Frame" width="800" height="500">
+The following image shows the web application's appearance & functionality:<br>
+<img src="./images/mockup.png" alt="Screenshot of web app" width="800" height="500">
 
 ## Future Development
-We would like to incorporate features that allow the user to:
-+ Use a search bar on the map to find local businesses or other destinations
-+ Search for a make, model & year to narrow down specific results
+We would like to incorporate the following features:
++ A search bar on the map to find local businesses or other destinations
++ Dropdown menus or some other option to search for a make, model & year to narrow down specific results
++ Generate photos of the searched vehicle
++ Edit the styling for the hero image
++ Include a 'Favorites List' that adds the searched cars 
 
-
-
-# Contributors
-## [Chris](https://github.com/chriscodinghub) <br>
-## [Benjamin](https://github.com/bjpippenger) <br>
-## [Mack](https://github.com/techmack92) 
+## Contributors
+[Chris](https://github.com/chriscodinghub) <br>
+[Benjamin](https://github.com/bjpippenger) <br>
+[Mack](https://github.com/techmack92) 
 

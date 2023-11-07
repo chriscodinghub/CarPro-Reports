@@ -45,9 +45,10 @@
           <div class="ui red card">
             <div class="search-bar">
               <h2 style="text-align: center;">Car Search</h2>
-              <div class="ui action input car-btn">
-                <input type="text" class="userInput" placeholder="Enter a year" />
-                <button class="ui inverted secondary button">Search</button>
+              <p style="text-align: center;">(1984-Current Year)</p>
+              <div class="ui action input">
+                <input type="text" class="userInput" placeholder="Enter Year of Car" />
+                <button class="ui inverted secondary button car-btn">Search</button>
               </div>
             </div>
           </div>
@@ -62,16 +63,11 @@
     
         <!-- Results Card -->
         <div class="ten wide column">
-          <div class="ui green card ui raised card">
-            <div class="results">
+          <div class="ui green card">
+            <div class="search-results">
               <h2 style="text-align: center;">Search Results</h2>
-              <div class="ui relaxed divided list">
-                <div class="item">
-                  <div class="content">
-                    <div class="car-name"></div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="results">
             </div>
           </div>
         </div>
@@ -96,9 +92,10 @@
     </script>
 
     <!-- Custom JavaScript -->
+    <script src="./assets/feature_localStorage.js"></script>
     <script src="./assets/feature_facts.js"></script>
     <script src="./assets/feature_CarAPI.js"></script>
-    <script src="./assets/feature_PhotoApi.js"></script>
+    <script src="./assets/feature_MapAPI.js"></script>
  
     <!-- Leaflet JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>

@@ -9,10 +9,6 @@ main {
   align-items: center;
 }
 
-.car-btn {
-  justify-content: center;
-}
-
 /* Center the cards and add some spacing between them */
 .ui.card {
   width: 400px; /* Adjust the card width as needed */
@@ -53,10 +49,6 @@ h3 {
 }
 
 /* Put some space between content and card */
-.search-bar, .results {
+.search-bar, .results, .search-results {
   margin: 27px;
-}
-
-.results {
-  margin-bottom: 5px;
 }
