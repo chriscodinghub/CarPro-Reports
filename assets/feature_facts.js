@@ -20,8 +20,8 @@ function dogFacts() {
       card.classList.add('card')
       card.innerHTML = `
       <div class="card-body">
-        <h2 class="card-make">Random fun facts about dogs!</h2>
-        <h3 class="card-make">${fact}</h3>
+        <h2 class="card-make" style="text-align: center";>Random fun facts about dogs!</h2>
+        <h3 class="card-make" style="text-align: center";>${fact}</h3>
         <br>
       </div>
       `
